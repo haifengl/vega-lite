@@ -39,5 +39,6 @@ do
   then
     rm -f examples/compiled/$name.svg
     node_modules/vega-cli/bin/vg2svg --seed 123456789 examples/compiled/$name.vg.json > examples/compiled/$name.svg -b .
+    node_modules/vega-cli/bin/vg2png --seed 123456789 examples/compiled/$name.vg.json > examples/compiled/$name.png -b .
   fi
 done
